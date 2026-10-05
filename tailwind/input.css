@@ -3196,3 +3196,50 @@ section.verlauf-nacht:not(.seitenkopf) {
    traegt. */
 a.group.inline-flex > svg:last-child { position: relative; top: 0.1em; }
 a.group.inline-flex[href^="tel:"] > svg:last-child { top: 0; }
+
+/* ------------------------------------------------------------------ *
+ *  Logoleiste unter dem Hero (Startseite, 05.10.2026)
+ *  Der Hero ist um --logo-anschnitt kuerzer als der Bildschirm, damit
+ *  die durchlaufenden Kundenlogos beim Laden schon angeschnitten zu
+ *  sehen sind. Der Ueberstand entfaellt: das runde untere Ende des
+ *  Hero steht jetzt im Bild (rad.js liest --hero-ueberstand mit).
+ * ------------------------------------------------------------------ */
+.variante-b { --logo-anschnitt: 88px; }
+.variante-b .hero-voll {
+  --hero-ueberstand: 0px;
+  height: calc(100vh - var(--logo-anschnitt));
+  height: calc(100dvh - var(--logo-anschnitt));
+  min-height: 600px;
+}
+.logo-leiste { padding-block: 30px 10px; }
+.logo-leiste .logo-band {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+          mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+.logo-leiste .logo-spur { align-items: center; }
+.logo-leiste .logo-spur img {
+  flex: none; width: auto; margin-right: 72px;
+  height: calc(var(--h-lg) * 1.25);
+}
+@media (max-width: 734px) {
+  .variante-b { --logo-anschnitt: 72px; }
+  /* Handy: svh statt lvh, sonst laege die Leiste hinter der Browserleiste */
+  .variante-b .hero-voll {
+    height: calc(100vh - var(--logo-anschnitt));
+    height: calc(100svh - var(--logo-anschnitt));
+  }
+  .variante-b .hero-voll [data-hero-text] { padding-bottom: 32px; }
+  .logo-leiste { padding-top: 24px; }
+  .logo-leiste .logo-spur img { height: calc(var(--h) * 1.15); margin-right: 44px; }
+}
+@media (max-height: 600px) {
+  .variante-b .hero-voll {
+    height: auto;
+    min-height: calc(100vh - var(--logo-anschnitt));
+    min-height: calc(100svh - var(--logo-anschnitt));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-leiste .logo-spur { animation: none; }
+}
