@@ -3204,7 +3204,7 @@ a.group.inline-flex[href^="tel:"] > svg:last-child { top: 0; }
  *  die Unterkante des Bildschirms schneidet mitten durch die Logos. Der Ueberstand entfaellt: das runde untere Ende des
  *  Hero steht jetzt im Bild (rad.js liest --hero-ueberstand mit).
  * ------------------------------------------------------------------ */
-.variante-b { --logo-anschnitt: 50px; }
+.variante-b { --logo-anschnitt: 44px; }
 .variante-b .hero-voll {
   --hero-ueberstand: 0px;
   height: calc(100vh - var(--logo-anschnitt));
@@ -3219,11 +3219,11 @@ a.group.inline-flex[href^="tel:"] > svg:last-child { top: 0; }
 }
 .logo-leiste .logo-spur { align-items: center; }
 .logo-leiste .logo-spur img {
-  flex: none; width: auto; margin-right: 72px;
-  height: calc(var(--h-lg) * 1.25);
+  flex: none; width: auto; margin-right: 104px;
+  height: var(--h-lg);
 }
 @media (max-width: 734px) {
-  .variante-b { --logo-anschnitt: 40px; }
+  .variante-b { --logo-anschnitt: 35px; }
   /* Handy: svh statt lvh, sonst laege die Leiste hinter der Browserleiste */
   .variante-b .hero-voll {
     height: calc(100vh - var(--logo-anschnitt));
@@ -3231,7 +3231,7 @@ a.group.inline-flex[href^="tel:"] > svg:last-child { top: 0; }
   }
   .variante-b .hero-voll [data-hero-text] { padding-bottom: 32px; }
   .logo-leiste { padding-block: 24px 40px; }
-  .logo-leiste .logo-spur img { height: calc(var(--h) * 1.15); margin-right: 44px; }
+  .logo-leiste .logo-spur img { height: calc(var(--h) * 0.95); margin-right: 64px; }
 }
 @media (max-height: 600px) {
   .variante-b .hero-voll {
