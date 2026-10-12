@@ -9,7 +9,7 @@ kontakt:      #kontakt
 <head>
 <!--einbau: seitenkopf.html-->
 </head>
-<body class="variante-b">
+<body class="variante-b" style="--logo-anschnitt:0px">
 <script>document.documentElement.className+=" js-auf";</script>
     <a href="#inhalt" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-navy focus:px-5 focus:py-3 focus:text-white">Zum Inhalt springen</a>
 <!--einbau: kopfzeile.html-->
@@ -89,43 +89,8 @@ kontakt:      #kontakt
           <div class="mt-6 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4"><a href="kontakt.html#kunden" class="btn btn-ghost">Kostenlos testen</a><a href="kontakt.html" class="btn btn-white">Kontakt aufnehmen</a></div>
         </div>
       </section>
-      <!-- Kundenlogos direkt unter dem Hero: der Hero ist um --logo-anschnitt
-           kuerzer als der Bildschirm, damit dieses Band beim Laden schon
-           nur angeschnitten zu sehen ist (man soll die Firmen erahnen).
-           Farbige Logos: images/kundenlogos/*-farbe.svg. Zweite Folge unsichtbar fuer die
-           nahtlose Schleife. Aussehen: .logo-leiste in tailwind/input.css. -->
-      <section class="logo-leiste bg-white" aria-label="Unternehmen, die auf taskrunner setzen">
-        <div class="logo-band"><div class="logo-spur" style="--dauer:100s;--dauer-sm:100s;--dauer-lg:100s">
-            <img src="images/kundenlogos/dm-farbe.svg" alt="dm-drogerie markt" decoding="async" width="423" height="280" style="--h:28px;--h-sm:34px;--h-lg:34px">
-            <img src="images/kundenlogos/rossmann-farbe.svg" alt="Rossmann" decoding="async" width="1357" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-            <img src="images/kundenlogos/apleona-farbe.svg" alt="Apleona" decoding="async" width="1116" height="160" style="--h:16px;--h-sm:19px;--h-lg:19px">
-            <img src="images/kundenlogos/nordsee-farbe.svg" alt="Nordsee" decoding="async" width="1009" height="160" style="--h:16px;--h-sm:19px;--h-lg:19px">
-            <img src="images/kundenlogos/lush-farbe.svg" alt="Lush" decoding="async" width="817" height="210" style="--h:21px;--h-sm:25px;--h-lg:25px">
-            <img src="images/kundenlogos/amplifon-farbe.svg" alt="Amplifon" decoding="async" width="830" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-            <img src="images/kundenlogos/flink-farbe.svg" alt="Flink" decoding="async" width="778" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-            <img src="images/kundenlogos/kamps-farbe.svg" alt="Kamps" decoding="async" width="829" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-            <img src="images/kundenlogos/avis-farbe.svg" alt="Avis" decoding="async" width="720" height="220" style="--h:22px;--h-sm:26px;--h-lg:26px">
-            <img src="images/kundenlogos/easyapotheke-farbe.svg" alt="easyApotheke" decoding="async" width="911" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-            <img src="images/kundenlogos/awg-farbe.svg" alt="AWG Mode Center" decoding="async" width="921" height="323" style="--h:20px;--h-sm:24px;--h-lg:24px">
-            <img src="images/kundenlogos/flaschenpost-farbe.svg" alt="flaschenpost" decoding="async" width="893" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-            <img src="images/kundenlogos/groupe-seb-farbe.svg" alt="Groupe SEB" decoding="async" width="134" height="300" style="--h:30px;--h-sm:36px;--h-lg:36px">
-            <img src="images/kundenlogos/atu-farbe.svg" alt="ATU" decoding="async" width="425" height="213" style="--h:22px;--h-sm:24px;--h-lg:24px">
-            <img src="images/kundenlogos/dm-farbe.svg" alt="" aria-hidden="true" decoding="async" width="423" height="280" style="--h:28px;--h-sm:34px;--h-lg:34px">
-            <img src="images/kundenlogos/rossmann-farbe.svg" alt="" aria-hidden="true" decoding="async" width="1357" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-            <img src="images/kundenlogos/apleona-farbe.svg" alt="" aria-hidden="true" decoding="async" width="1116" height="160" style="--h:16px;--h-sm:19px;--h-lg:19px">
-            <img src="images/kundenlogos/nordsee-farbe.svg" alt="" aria-hidden="true" decoding="async" width="1009" height="160" style="--h:16px;--h-sm:19px;--h-lg:19px">
-            <img src="images/kundenlogos/lush-farbe.svg" alt="" aria-hidden="true" decoding="async" width="817" height="210" style="--h:21px;--h-sm:25px;--h-lg:25px">
-            <img src="images/kundenlogos/amplifon-farbe.svg" alt="" aria-hidden="true" decoding="async" width="830" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-            <img src="images/kundenlogos/flink-farbe.svg" alt="" aria-hidden="true" decoding="async" width="778" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-            <img src="images/kundenlogos/kamps-farbe.svg" alt="" aria-hidden="true" decoding="async" width="829" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-            <img src="images/kundenlogos/avis-farbe.svg" alt="" aria-hidden="true" decoding="async" width="720" height="220" style="--h:22px;--h-sm:26px;--h-lg:26px">
-            <img src="images/kundenlogos/easyapotheke-farbe.svg" alt="" aria-hidden="true" decoding="async" width="911" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-            <img src="images/kundenlogos/awg-farbe.svg" alt="" aria-hidden="true" decoding="async" width="921" height="323" style="--h:20px;--h-sm:24px;--h-lg:24px">
-            <img src="images/kundenlogos/flaschenpost-farbe.svg" alt="" aria-hidden="true" decoding="async" width="893" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-            <img src="images/kundenlogos/groupe-seb-farbe.svg" alt="" aria-hidden="true" decoding="async" width="134" height="300" style="--h:30px;--h-sm:36px;--h-lg:36px">
-            <img src="images/kundenlogos/atu-farbe.svg" alt="" aria-hidden="true" decoding="async" width="425" height="213" style="--h:22px;--h-sm:24px;--h-lg:24px">
-        </div></div>
-      </section>
+      <!-- Kundenlogo-Leiste in diesem Zweig (ohne-kundenlogos) entfernt.
+           Wiederherstellen: Stand aus hetzner-version bzw. main uebernehmen. -->
       <section class="bg-white section-y">
         <div class="container-wide">
           <div data-auf class="grid gap-6 lg:grid-cols-2 lg:items-end lg:gap-16">
@@ -228,55 +193,8 @@ kontakt:      #kontakt
               </div>
             </div>
             <div class="raster-spalte">
-              <div data-auf class="raster-kachel kachel-verlauf-2 mit-korn kachel-polster">
-                <!-- Kundenzahl (bisher 53) ausgeblendet, bis sie zur
-                     Vertriebspraesentation passt. -->
-                <h3 class="t-h3 text-blue-600">Unternehmen, die schon auf taskrunner setzen.</h3>
-                <!-- Drei Laufbaender mit Kundenlogos, je Reihe zweimal dieselben
-                     Logos hintereinander (die zweite Folge fuer das Publikum
-                     unsichtbar), damit die Schleife nahtlos laeuft.
-                     Aussehen: .kunden-baender in tailwind/input.css.
-                     Ohne loading="lazy": sonst laedt ein Logo erst, wenn es
-                     schon ins Band laeuft, und dort klafft eine Luecke. -->
-                <div class="raster-fuss kunden-baender">
-                  <div class="logo-band"><div class="logo-spur" style="--dauer:40s;--dauer-sm:40s;--dauer-lg:40s;--verzug:-6s">
-                    <img src="images/kundenlogos/dm-blau.svg" alt="dm-drogerie markt" decoding="async" width="423" height="280" style="--h:28px;--h-sm:34px;--h-lg:34px">
-                    <img src="images/kundenlogos/amplifon-blau.svg" alt="Amplifon" decoding="async" width="830" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-                    <img src="images/kundenlogos/lush-blau.svg" alt="Lush" decoding="async" width="817" height="210" style="--h:21px;--h-sm:25px;--h-lg:25px">
-                    <img src="images/kundenlogos/nordsee-blau.svg" alt="Nordsee" decoding="async" width="1009" height="160" style="--h:16px;--h-sm:19px;--h-lg:19px">
-                    <img src="images/kundenlogos/awg-blau.svg" alt="AWG Mode Center" decoding="async" width="921" height="323" style="--h:20px;--h-sm:24px;--h-lg:24px">
-                    <img src="images/kundenlogos/dm-blau.svg" alt="" aria-hidden="true" decoding="async" width="423" height="280" style="--h:28px;--h-sm:34px;--h-lg:34px">
-                    <img src="images/kundenlogos/amplifon-blau.svg" alt="" aria-hidden="true" decoding="async" width="830" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-                    <img src="images/kundenlogos/lush-blau.svg" alt="" aria-hidden="true" decoding="async" width="817" height="210" style="--h:21px;--h-sm:25px;--h-lg:25px">
-                    <img src="images/kundenlogos/nordsee-blau.svg" alt="" aria-hidden="true" decoding="async" width="1009" height="160" style="--h:16px;--h-sm:19px;--h-lg:19px">
-                    <img src="images/kundenlogos/awg-blau.svg" alt="" aria-hidden="true" decoding="async" width="921" height="323" style="--h:20px;--h-sm:24px;--h-lg:24px">
-                  </div></div>
-                  <div class="logo-band"><div class="logo-spur" style="--dauer:46s;--dauer-sm:46s;--dauer-lg:46s;--verzug:-21s">
-                    <img src="images/kundenlogos/rossmann-blau.svg" alt="Rossmann" decoding="async" width="1357" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-                    <img src="images/kundenlogos/kamps-blau.svg" alt="Kamps" decoding="async" width="829" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-                    <img src="images/kundenlogos/flink-blau.svg" alt="Flink" decoding="async" width="778" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-                    <img src="images/kundenlogos/apleona-blau.svg" alt="Apleona" decoding="async" width="1116" height="160" style="--h:16px;--h-sm:19px;--h-lg:19px">
-                    <img src="images/kundenlogos/rossmann-blau.svg" alt="" aria-hidden="true" decoding="async" width="1357" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-                    <img src="images/kundenlogos/kamps-blau.svg" alt="" aria-hidden="true" decoding="async" width="829" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-                    <img src="images/kundenlogos/flink-blau.svg" alt="" aria-hidden="true" decoding="async" width="778" height="200" style="--h:20px;--h-sm:24px;--h-lg:24px">
-                    <img src="images/kundenlogos/apleona-blau.svg" alt="" aria-hidden="true" decoding="async" width="1116" height="160" style="--h:16px;--h-sm:19px;--h-lg:19px">
-                  </div></div>
-                  <div class="logo-band"><div class="logo-spur" style="--dauer:43s;--dauer-sm:43s;--dauer-lg:43s;--verzug:-13s">
-                    <img src="images/kundenlogos/avis-blau.svg" alt="Avis" decoding="async" width="720" height="220" style="--h:22px;--h-sm:26px;--h-lg:26px">
-                    <img src="images/kundenlogos/easyapotheke-blau.svg" alt="easyApotheke" decoding="async" width="911" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-                    <img src="images/kundenlogos/groupe-seb-blau.svg" alt="Groupe SEB" decoding="async" width="134" height="300" style="--h:30px;--h-sm:36px;--h-lg:36px">
-                    <img src="images/kundenlogos/flaschenpost-blau.svg" alt="flaschenpost" decoding="async" width="893" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-                    <img src="images/kundenlogos/atu-blau.svg" alt="ATU" decoding="async" width="300" height="71" style="--h:18px;--h-sm:22px;--h-lg:22px">
-                    <img src="images/kundenlogos/avis-blau.svg" alt="" aria-hidden="true" decoding="async" width="720" height="220" style="--h:22px;--h-sm:26px;--h-lg:26px">
-                    <img src="images/kundenlogos/easyapotheke-blau.svg" alt="" aria-hidden="true" decoding="async" width="911" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-                    <img src="images/kundenlogos/groupe-seb-blau.svg" alt="" aria-hidden="true" decoding="async" width="134" height="300" style="--h:30px;--h-sm:36px;--h-lg:36px">
-                    <img src="images/kundenlogos/flaschenpost-blau.svg" alt="" aria-hidden="true" decoding="async" width="893" height="190" style="--h:19px;--h-sm:23px;--h-lg:23px">
-                    <img src="images/kundenlogos/atu-blau.svg" alt="" aria-hidden="true" decoding="async" width="300" height="71" style="--h:18px;--h-sm:22px;--h-lg:22px">
-                  </div></div>
-                  <p class="mt-6 t-caption text-ink/75">Eine kleine Auswahl. Dazu kommen viele weitere Unternehmen.</p>
-                </div>
-              </div>
-              <div data-auf class="raster-kachel bg-blue-600 mit-korn kachel-polster text-white">
+              <!-- Kachel mit Kundenlogos in diesem Zweig entfernt (siehe oben). -->
+              <div data-auf class="raster-kachel bg-blue-600 mit-korn kachel-polster text-white" style="grid-column:1/-1">
                 <div class="raster-fuss grid gap-8">
                   <div>
                     <p class="t-h2 tabular-nums">20.241</p>
